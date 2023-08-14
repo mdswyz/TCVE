@@ -10,7 +10,8 @@ pip install -r requirements.txt
 ```
 
 Installing [xformers](https://github.com/facebookresearch/xformers) is highly recommended for more efficiency and speed on GPUs. 
-To enable xformers, set `enable_xformers_memory_efficient_attention=True` (default).
+To enable xformers, set `enable_xformers_memory_efficient_attention=True` (default). 
+Please make sure at least 24G GPU memory is available.
 
 ### Downloading pretrained Stable Diffusion Model
 
