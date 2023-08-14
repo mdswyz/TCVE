@@ -42,12 +42,6 @@ def main(
     train_data: Dict,
     validation_data: Dict,
     validation_steps: int = 100,
-    trainable_modules: Tuple[str] = (
-        "attn1.to_q",
-        "attn2.to_q",
-        "attn_temp",
-        "_TempUnet",
-    ),
     train_batch_size: int = 1,
     max_train_steps: int = 500,
     learning_rate: float = 3e-5,
@@ -109,12 +103,11 @@ def main(
     vae = AutoencoderKL.from_pretrained(pretrained_model_path, subfolder="vae")
     unet = UNet3DConditionModel.from_pretrained_2d(pretrained_model_path, subfolder="unet")
 
-    # Freeze vae and text_encoder
     vae.requires_grad_(False)
     text_encoder.requires_grad_(False)
     unet.requires_grad_(False)
     for name, module in unet.named_modules():
-        if name.endswith(tuple(trainable_modules)):
+        if name.endswith(tuple(("attn1.to_q", "attn2.to_q", "attn_temp", "_TempUnet"))):
             for params in module.parameters():
                 params.requires_grad = True
 
