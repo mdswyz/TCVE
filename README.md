@@ -25,3 +25,5 @@ To edit videos by our TCVE, please run this command:
 accelerate launch video_editing.py --config="configs/surfer-on-wave.yaml"
 ```
 And, the results including well-trained models and edited videos (i.e., `./samples`) are saved in `./output`.
+
+## Limitations and future work.
