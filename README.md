@@ -26,4 +26,6 @@ accelerate launch video_editing.py --config="configs/surfer-on-wave.yaml"
 ```
 And, the results including well-trained models and edited videos (i.e., `./samples`) are saved in `./output`.
 
-## Limitations and future work.
+## Limitations and Failure case.
+
+While our method showcases commendable outcomes, it is not without its limitations. Specifically, during the execution of intricate editing tasks such as simultaneous alterations of style, objects, and backgrounds, our method may yield less satisfactory results, as shown in below. 
