@@ -28,4 +28,8 @@ And, the results including well-trained models and edited videos (i.e., `./sampl
 
 ## Limitations and Failure case.
 
-While our method showcases commendable outcomes, it is not without its limitations. Specifically, during the execution of intricate editing tasks such as simultaneous alterations of style, objects, and backgrounds, our method may yield less satisfactory results, as shown in below. 
+While our method showcases commendable outcomes, it is not without its limitations. Specifically, during the execution of intricate editing tasks such as simultaneous alterations of style, objects, and backgrounds, our method may yield less satisfactory results, as shown below. In this case, only two cows are changed to two sheep, but the style and background can not be edited successfully. 
+
+![](failure case.png)
+
+This could be attributed to the fact that the text conditioning embedding stems from the CLIP text encoder, which aligns predominantly with image-based embeddings and may not seamlessly correspond with video samples. A potential solution is to use an additional video-based CLIP model as text embedding. This avenue of research is left as future work.
