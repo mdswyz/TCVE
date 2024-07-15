@@ -25,3 +25,14 @@ To edit videos by our TCVE, please run this command:
 accelerate launch video_editing.py --config="configs/surfer-on-wave.yaml"
 ```
 And, the results including well-trained models and edited videos (i.e., `./samples`) are saved in `./output`.
+
+### Citation
+If you find the code helpful in your research or work, please cite the following paper.
+```
+@article{wang2023edit,
+  title={Edit Temporal-Consistent Videos with Image Diffusion Model},
+  author={Wang, Yuanzhi and Li, Yong and Liu, Xin and Dai, Anbo and Chan, Antoni and Cui, Zhen},
+  journal={arXiv preprint arXiv:2308.09091},
+  year={2023}
+}
+```
