@@ -29,10 +29,10 @@ And, the results including well-trained models and edited videos (i.e., `./sampl
 ### Citation
 If you find the code helpful in your research or work, please cite the following paper.
 ```
-@article{wang2023edit,
-  title={Edit Temporal-Consistent Videos with Image Diffusion Model},
-  author={Wang, Yuanzhi and Li, Yong and Liu, Xin and Dai, Anbo and Chan, Antoni and Cui, Zhen},
-  journal={arXiv preprint arXiv:2308.09091},
-  year={2023}
+@article{TCVE,
+	author = {Wang, Yuanzhi and Li, Yong and Zhang, Xiaoya and Liu, Xin and Dai, Anbo and Chan, Antoni B. and Cui, Zhen},
+	title = {Edit Temporal-Consistent Videos with Image Diffusion Model},
+	journal = {ACM Transactions on Multimedia Computing, Communications, and Applications}
+  year = {2024}
 }
 ```
