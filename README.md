@@ -1,4 +1,4 @@
-# Edit Temporal-Consistent Videos with Image Diffusion Model (TCVE)
+# [Edit Temporal-Consistent Videos with Image Diffusion Model (TCVE)](https://arxiv.org/abs/2308.09091)
 
 This repository is the official implementation of TCVE.
 
