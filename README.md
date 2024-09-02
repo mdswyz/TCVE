@@ -33,6 +33,6 @@ If you find the code helpful in your research or work, please cite the following
 	author = {Wang, Yuanzhi and Li, Yong and Zhang, Xiaoya and Liu, Xin and Dai, Anbo and Chan, Antoni B. and Cui, Zhen},
 	title = {Edit Temporal-Consistent Videos with Image Diffusion Model},
 	journal = {ACM Transactions on Multimedia Computing, Communications, and Applications}
-  year = {2024}
+  	year = {2024}
 }
 ```
